@@ -1,15 +1,71 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Courier request form</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-  </head>
-  <body>
-    <div>
-      <h4 class="bg-green-500">Helo kiruthika</h4>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courier request form</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-gray-600 p-5">
+  <div class=" max-w-xl bg-white mx-auto border p-8 rounded">
+    <h4 class="font-semibold text-lg text-center">COURIER REQUEST FORM</h4>
+    <form action="" id="courier-request">
+      <div class="grid grid-cols-2 gap-x-5">
+        <input class="px-4 py-2 rounded bg-gray-200 my-2 w-50" type="text" placeholder="Name" id="name" name="name"
+          required>
+        <input class="px-4 py-2 rounded bg-gray-200 my-2 w-50" type="number" placeholder="Phone" id="number" min="0"
+          name="number" required>
+      </div>
+
+      <div><input class="px-4 py-2 rounded bg-gray-200 my-2 w-full" type="date" placeholder="pickup date" id="date"
+          name="date" required></div>
+      <div><textarea class="px-4 rounded bg-gray-200 my-2 w-full" name="Address" id="address" cols="5" rows="2"
+          placeholder="address" required></textarea></div>
+      <button type="submit" class="bg-emerald-500 mt-2 py-2 px-2 w-full text-white hover:bg-emerald-600">Submit</button>
+    </form>
+
+  </div>
+
+  <div class=" max-w-xl bg-white mx-auto border p-10 rounded mt-2 invisible">
+    <h4 class="font-semibold text-lg text-center">COURIER REQUESTS</h4>
+    <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+    <div class="flex flex-col">
+      <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+          <div class="overflow-hidden">
+            <table class="min-w-full text-center text-sm font-light">
+              <thead class="border-b bg-neutral-50 font-medium dark:border-neutral-500 dark:text-neutral-800">
+                <tr>
+                  <th scope="col" class=" px-6 py-4">#</th>
+                  <th scope="col" class=" px-6 py-4">Container</th>
+                  <th scope="col" class=" px-6 py-4">Pickup date</th>
+                  <th scope="col" class=" px-6 py-4">Address</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b dark:border-neutral-500">
+                  <td class="whitespace-nowrap  px-6 py-4 font-medium">1</td>
+                  <td class="whitespace-nowrap  px-6 py-4">Mark</td>
+                  <td class="whitespace-nowrap  px-6 py-4">Otto</td>
+                  <td class="whitespace-nowrap  px-6 py-4">@mdo</td>
+                </tr>
+                <tr class="border-b dark:border-neutral-500">
+                  <td class="whitespace-nowrap  px-6 py-4 font-medium">2</td>
+                  <td class="whitespace-nowrap  px-6 py-4 ">Jacob</td>
+                  <td class="whitespace-nowrap  px-6 py-4">Thornton</td>
+                  <td class="whitespace-nowrap  px-6 py-4">@fat</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  </div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
 </html>
